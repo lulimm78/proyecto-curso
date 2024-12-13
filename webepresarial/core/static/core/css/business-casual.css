@@ -1,6 +1,6 @@
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(0, 102, 255, 0.8), rgba(0, 102, 255, 0.8)), url("../img/bg2.jpg");
+  background: linear-gradient(rgba(135, 206, 235, 0.65), rgba(135, 206, 235, 0.65)), url("../img/tres.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -33,12 +33,12 @@ p {
 
 .site-heading .site-heading-upper {
   display: block;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 800;
 }
 
 .site-heading .site-heading-lower {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 100;
   line-height: 4rem;
 }
@@ -80,12 +80,12 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(80, 80, 80, 0.9);
   font-family: 'Raleway';
 }
 
 #mainNav .navbar-brand {
-  color: #e6a756;
+  color: #0000FF;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -94,7 +94,7 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #e6a756;
+  color: #0000FF;
 }
 
 @media (min-width: 992px) {
@@ -105,7 +105,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: #0000FF;
   }
 }
 
@@ -150,7 +150,7 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(200, 200, 200, 200);
+  background-color: rgba(220, 220, 220, 0.9);
 }
 
 .cta .cta-inner {
@@ -222,7 +222,7 @@ p {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #e6a756;
+  color: #0000FF;
 }
 
 @media (min-width: 992px) {
@@ -237,15 +237,15 @@ p {
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(80, 80, 80, 0.9);
 }
 
 .text-primary {
-  color: #e6a756 !important;
+  color: #0000FF !important;
 }
 
 .bg-primary {
-  background-color: #e6a756 !important;
+  background-color: #0000FF !important;
 }
 
 .btn {
@@ -253,8 +253,8 @@ p {
 }
 
 .btn-primary {
-  background-color: #e6a756;
-  border-color: #e6a756;
+  background-color: #0000FF;
+  border-color: #0000FF;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -279,12 +279,12 @@ p {
 }
 
 a.link{
-  color: #df902a;
+  color: #0000FF;
 }
 
 a.link:hover{
   text-decoration: none;
-  color: #e6a756 !important;
+  color: #0000FF !important;
 }
 
 .section-content{
@@ -299,3 +299,4 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+

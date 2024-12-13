@@ -1,6 +1,6 @@
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(0, 102, 255, 0.8), rgba(0, 102, 255, 0.8)), url("../img/bg2.jpg");
+  background: linear-gradient(rgba(173, 216, 230, 0.8), rgba(173, 216, 230, 0.8)), url("../img/bg2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -76,11 +76,11 @@ p {
 }
 
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(20, 20, 10, 0.85);
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(190, 190, 190, 0.9);
   font-family: 'Raleway';
 }
 
@@ -150,7 +150,7 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  background-color: rgba(200, 200, 200, 200);
 }
 
 .cta .cta-inner {

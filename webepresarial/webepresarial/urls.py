@@ -19,7 +19,16 @@ from django.urls import path,include
 from django.conf import settings
 
 urlpatterns = [
+    #path del core
     path('',include('core.urls')),
+    #path de services
+    path('services/',include('services.urls')),
+    #path de blog
+    path('blog/',include('blog.urls')),
+     # Paths de pages
+    path('page/', include('pages.urls')),
+     # Paths de coontact
+    path('contact/', include('contact.urls')),
     #path del admin
     path('admin/', admin.site.urls),
 ]

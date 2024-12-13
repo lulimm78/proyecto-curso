@@ -7,7 +7,7 @@ class Service(models.Model):
     subtitle = models.CharField(max_length=200, verbose_name="Subtítulo")
     content = models.TextField(verbose_name="Contenido")
     image = models.ImageField(verbose_name="Imagen", upload_to="services")
-    video = models.URLField(verbose_name="URLVideo")
+    video = models.URLField(verbose_name="URLVideo",null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
     updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de edición")
 
