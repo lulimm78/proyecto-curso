@@ -23,10 +23,11 @@
               <p class="mb-0">{{service.content}}</p>
             </div>  
           </div>
-          <a href="{{service.video}}" target="_blank" style="color: blue; text-decoration: none;">
-            <p style="text-align: center;" class="mb-0">Haz click para ver vídeo</p>
-          </a>
-
+          {% if service.video %}
+            <a href="{{service.video}}" target="_blank" style="color: blue; text-decoration: none;">
+              <p style="text-align: center;" class="mb-0">Haz click para ver vídeo</p>
+            </a>
+          {% endif %}
         </div>
       </div>
     </section>

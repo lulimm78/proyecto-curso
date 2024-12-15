@@ -1,6 +1,6 @@
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(240, 255, 255, 0.5), rgba(240, 255, 255, 0.5)), url("../img/foto_soberao1.png");
+  background: linear-gradient(rgba(135, 206, 235, 0.65), rgba(135, 206, 235, 0.65)), url("../img/tres.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Calibri';
+  font-family: 'Raleway';
 }
 
 p {
@@ -26,8 +26,9 @@ p {
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  text-transform: uppercase;
   line-height: 1;
-  font-family: 'Calibri';
+  font-family: 'Raleway';
 }
 
 .site-heading .site-heading-upper {
@@ -47,6 +48,9 @@ p {
   margin-bottom: 5rem;
 }
 
+.section-heading {
+  text-transform: uppercase;
+}
 
 .section-heading .section-heading-upper {
   display: block;
@@ -308,7 +312,4 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
-
-
-
 
