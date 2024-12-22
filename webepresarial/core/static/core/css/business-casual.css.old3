@@ -1,10 +1,9 @@
 body {
-  font-family: 'Calibri';
-  background: url("../img/palotes.jpeg");
+  font-family: 'Lora';
+  background: linear-gradient(rgba(240, 255, 255, 0.5), rgba(240, 255, 255, 0.5)), url("../img/palotes.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-}
 }
 
 h1,
@@ -27,7 +26,7 @@ p {
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  line-height: 2;
+  line-height: 1;
   font-family: 'Calibri';
 }
 
@@ -68,12 +67,6 @@ p {
   font-size: 2rem;
   font-weight: 200;
 }
-.section-heading .section-heading-lower-h {
-  display: block;
-  font-size: 5rem;
-  font-weight: 900;
-  color: #0047AB;
-}
 
 .section-heading .section-heading-under {
   display: block;
@@ -96,12 +89,12 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(180, 80, 80, 0.9);
+  background-color: rgba(80, 80, 80, 0.9);
   font-family: 'Raleway';
 }
 
 #mainNav .navbar-brand {
-  color: #4682B4;
+  color: #0000FF;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -110,7 +103,7 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #4682B4;
+  color: #0000FF;
 }
 
 @media (min-width: 992px) {
@@ -121,7 +114,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #4682B4;
+    color: #0000FF;
   }
 }
 
@@ -238,7 +231,7 @@ p {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #4682B4;
+  color: #0000FF;
 }
 
 @media (min-width: 992px) {
@@ -253,15 +246,15 @@ p {
 }
 
 .footer {
-  background-color: rgba(180, 80, 80, 0.9);
+  background-color: rgba(80, 80, 80, 0.9);
 }
 
 .text-primary {
-  color: #4682B4 !important;
+  color: #0000FF !important;
 }
 
 .bg-primary {
-  background-color: #4682B4 !important;
+  background-color: #0000FF !important;
 }
 
 .btn {
@@ -269,8 +262,8 @@ p {
 }
 
 .btn-primary {
-  background-color: #4682B4;
-  border-color: #4682B4;
+  background-color: #0000FF;
+  border-color: #0000FF;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -295,16 +288,16 @@ p {
 }
 
 a.link{
-  color: #4682B4;
+  color: #0000FF;
 }
 
 a.link:hover{
   text-decoration: none;
-  color: #4682B4 !important;
+  color: #0000FF !important;
 }
 
 .section-content{
-  font-family: 'Calibri' !important;
+  font-family: 'Lora' !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 28px !important;

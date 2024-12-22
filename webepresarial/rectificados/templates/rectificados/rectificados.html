@@ -2,28 +2,27 @@
 
 {% load static %}
 
-{% block title %}Mis Boquillas{% endblock %}
-
+{% block title %}Rectificados{% endblock %}
 {% block content %}
-  {% for service in services reversed %}
+  {% for rectificado in rectificados reversed %}
     <section class="page-section">
       <div class="container">
         <div class="product-item">
           <div class="product-item-title d-flex">
             <div class="bg-faded p-5 d-flex mr-auto rounded">
               <h2 class="section-heading mb-0">
-                <span class="section-heading-lower">{{service.title}}</span>
+                <span class="section-heading-lower">{{rectificado.title}}</span>
               </h2>
             </div>
           </div>
-          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{service.image.url}}" alt="">
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{rectificado.image.url}}" alt="">
           <div class="product-item-description d-flex ml-auto">
             <div class="bg-faded p-5 rounded">
-              <p class="mb-0">{{service.content}}</p>
+              <p class="mb-0">{{rectificado.content}}</p>
             </div>  
           </div>
-          {% if service.video %}
-            <a href="{{service.video}}" target="_blank" style="color: blue; text-decoration: none;">
+          {% if rectificado.video %}
+            <a href="{{rectificado.video}}" target="_blank" style="color: blue; text-decoration: none;">
               <p style="text-align: center;" class="mb-0">Haz click para ver vídeo</p>
             </a>
           {% endif %}

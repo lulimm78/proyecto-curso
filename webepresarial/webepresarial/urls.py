@@ -23,6 +23,8 @@ urlpatterns = [
     path('',include('core.urls')),
     #path de services
     path('services/',include('services.urls')),
+    #path de rectificados
+    path('rectificados/',include('rectificados.urls')),
     #path de blog
     path('blog/',include('blog.urls')),
      # Paths de pages
