@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-aff1-gxqyiqnqsolr%edu-p8a7oai)8u&yu-_+l^ux*7()5pi3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['manucontreras.pythonanywhere.com','localhots','127.0.0.1','www.manu-contreras.com']
 
