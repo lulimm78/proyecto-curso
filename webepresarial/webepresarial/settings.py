@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'rectificados.apps.RectificadosConfig',
     'services.apps.ServicesConfig',
     'social.apps.SocialConfig',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [

@@ -70,7 +70,7 @@ p {
 }
 .section-heading .section-heading-lower-h {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #205375;
 }
@@ -92,7 +92,7 @@ p {
 }
 
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 #mainNav {
@@ -338,4 +338,8 @@ ul.errorlist{
 
 
 
-
+.bg-beige-translucent {
+  background-color: rgba(255, 255, 255, 0.5);  /* blanco casi sólido con un 12% de transparencia */
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
