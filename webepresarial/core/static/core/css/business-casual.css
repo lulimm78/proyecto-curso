@@ -3,7 +3,7 @@
 	font-size:1.2rem;
 }
 body {
-  background: url("../img/palotes.jpeg");
+  background: url("../img/fondo_web.webp");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -96,21 +96,21 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(180, 80, 80, 0.9);
+  background-color: rgba(32, 53, 117, 0.85);
   font-family: 'Raleway';
 }
 
 #mainNav .navbar-brand {
-  color: #205375;
+  color: #ffffff;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   font-weight: 800;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #205375;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 992px) {
@@ -121,7 +121,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #205375;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -207,8 +207,8 @@ p {
 @media (max-width: 768px) {
   .product-item .product-item-img {
     width: 90%;
-    height: auto;         /* En móviles, se adapta mejor si prefieres sin recorte */
-    object-fit: contain;  /* Alternativa en móviles: no recorta, encaja */
+    height: 250px;         /* En móviles, se adapta mejor si prefieres sin recorte */
+    object-fit: cover;  /* Alternativa en móviles: no recorta, encaja */
   }
 }
 
@@ -245,35 +245,12 @@ p {
   }
 }
 
-.list-hours {
-  font-size: 0.9rem;
-}
-
-.list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-  padding-bottom: .25rem;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.list-hours .list-hours-item.today {
-  font-weight: bold;
-  color: #205375;
-}
-
-@media (min-width: 992px) {
-  .list-hours {
-    width: 50%;
-    font-size: 1.1rem;
-  }
-}
-
 .address strong {
   font-size: 1.2rem;
 }
 
 .footer {
-  background-color: rgba(180, 80, 80, 0.9);
+  background-color: rgba(32, 53, 117, 0.85);
 }
 
 .text-primary {
@@ -289,8 +266,8 @@ p {
 }
 
 .btn-primary {
-  background-color: #205375;
-  border-color: #205375;
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(255,255,255,1);
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -315,12 +292,12 @@ p {
 }
 
 a.link{
-  color: #205375;
+  color: rgba(255,255,255,0.3);
 }
 
 a.link:hover{
   text-decoration: none;
-  color: #205375 !important;
+  color: rgba(255,255,255,0.3) !important;
 }
 
 .section-content{
@@ -336,10 +313,148 @@ ul.errorlist{
   color: red;
 }
 
-
-
 .bg-beige-translucent {
-  background-color: rgba(255, 255, 255, 0.5);  /* blanco casi sólido con un 12% de transparencia */
-  padding: 2rem;
+  background-color: rgba(250, 245, 235, 0.7); /* beige translúcido */
   border-radius: 0.5rem;
+  padding: 1.2rem;           /* padding cómodo */
+  margin: 0 auto;           /* centrar */
+  max-width: 700px;         /* ancho máximo */
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .bg-beige-translucent {
+    padding: 1rem;              /* menos padding interior en móvil */
+    margin-left: 1rem;          /* margen lateral para que no quede pegado */
+    margin-right: 1rem;
+  }
+}
+
+.section-heading-home {
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.section-heading-home .titulo-principal {
+  display: block;
+  font-size: 2rem;       /* más grande y visible */
+  font-weight: 400;
+  color: #333333;          /* gris oscuro elegante */
+}
+
+.section-heading-home .nombre-marca {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;        /* más grueso para destacar */
+  color: #205375;         /* tu azul corporativo */
+  margin-top: 0.3rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* sombra suave */
+  border-bottom: 2px solid #205375; /* subrayado sutil que refuerza marca */
+  display: inline-block;  /* subrayado solo en el texto, no en toda la línea */
+  padding-bottom: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .section-heading-home .titulo-principal {
+    font-size: 1.3rem;
+  }
+  .section-heading-home .nombre-marca {
+    font-size: 1.8rem;
+  }
+}
+
+.logo-navbar {
+  max-height: 50px;     /* controla el alto del logo en escritorio */
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo-navbar {
+    max-height: 40px;  /* un poco más pequeño en móviles */
+  }
+}
+
+.about-heading-home {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vh;
+  position: relative;
+}
+
+/* Sin oscurecido */
+.hero-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 2rem;
+}
+
+/* Títulos */
+.titulo-principal {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* ayuda en fondos claros */
+}
+
+.marca-home {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 1.7rem;
+  }
+
+  .marca-home {
+    font-size: 1.2rem;
+  }
+}
+
+/*clases para el contacto*/
+.contact-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #205375;
+  margin-bottom: 1rem;
+}
+
+.contact-link {
+  color: #205375;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
 }

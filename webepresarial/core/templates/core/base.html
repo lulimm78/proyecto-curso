@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Manu Contreras fabrica boquillas de saxofón personalizadas con materiales de alta calidad. Hechas a mano en España">
+    <meta name="description" content="Manu Contreras fabrica boquillas de saxofón personalizadas con materiales de alta calidad. Hechas a mano en Sevilla, España">
     <meta name="author" content="">
 
-    <title>Manu Contreras</title>
+    <title>Boquillas Contreras – Manu Contreras | Boquillas artesanales de saxofón | Luthier de saxofones</title></title>
 
     {% load static %}
     <!-- Bootstrap -->
@@ -17,26 +17,29 @@
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
 
     <!-- Estilos -->
-    <link href="{% static 'core/css/business-casual.css' %}" rel="stylesheet">
+    <!-- Carga no bloqueante de tu CSS -->
+    <link rel="preload" href="{% static 'core/css/business-casual.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="{% static 'core/css/business-casual.css' %}" rel="stylesheet"></noscript>
+    <!-- <link href="{% static 'core/css/business-casual.css' %}" rel="stylesheet"> -->
 
   </head>
 
   <body>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">MANU CONTRERAS</span>
-      <!--<span class="site-heading-lower">Luthier de saxofones y constructor de boquillas</span>-->
-    </h1>
-
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">MANU CONTRERAS</a>
+        <img src="{% static 'core/img/logo.webp' %}" alt="Manu Contreras logo" class="logo-navbar">
+        <!--<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">MANU CONTRERAS</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,7 +76,7 @@
       <div class="container">
         <p class="m-0">
           {% if LINK_FACEBOOK %}
-	        <a href="{{LINK_FACEBOOK}}" class="link">
+	        <a href="{{LINK_FACEBOOK}}" class="link" aria-label="Ir a Facebook de Manu Contreras">
 	          <span class="fa-stack fa-lg">
 	            <i class="fa fa-circle fa-stack-2x"></i>
 	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -81,7 +84,7 @@
 	        </a>
           {% endif %}
           {% if LINK_INSTAGRAN %}
-	        <a href="{{LINK_INSTAGRAN}}" class="link">
+	        <a href="{{LINK_INSTAGRAN}}" class="link" aria-label="Ir a Instragram de Manu Contreras">
 	          <span class="fa-stack fa-lg">
 	            <i class="fa fa-circle fa-stack-2x"></i>
 	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -104,8 +107,8 @@
 	</footer>
 
     <!-- Bootstrap -->
-    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}" defer></script>
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}" defer></script>
 
   </body>
 

@@ -19,6 +19,7 @@ from django.urls import path,include
 from django.conf import settings
 from django.contrib.sitemaps.views import sitemap
 from core.sitemaps import StaticViewSitemap
+from django.views.generic import TemplateView
 
 sitemaps = {
     'static': StaticViewSitemap,
@@ -39,7 +40,12 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     #path del admin
     path('admin/', admin.site.urls),
+    #path sitemap para google search
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
+    #para bing search
+    path("BingSiteAuth.xml", TemplateView.as_view(
+        template_name="BingSiteAuth.xml", content_type="text/xml"
+    )),
 ]
 
 if settings.DEBUG:
